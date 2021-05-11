@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuite name="User">
+        <!--Суффикс в названии файла теста и путь до него-->
+        <directory suffix="Test.php">./tests/User</directory>
+    </testsuite>
+
+    <!--Формирование отчета о тестах-->
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./tests/User</directory>
+        </whitelist>
+    </filter>
+</phpunit>
